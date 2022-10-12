@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // 1)pass string to function
+  // 2)check the value is string or not
+  // 2) reverse the String
+  // 3) store in another variable
+  // 4) check value are same or not
+  // 5) print its palindrome
+
+  function checkPalindrome(string1) {
+    let string2 = "";
+    if (typeof string1 === "string") {
+      console.log(fun());
+    } else {
+      console.log("invalid");
+    }
+    function fun() {
+      for (let i = string1.length; i >= 0; i--) {
+        string2 = string2 + string1.charAt(i);
+      }
+      if (string1 === string2) {
+        return "palindrome";
+      } else {
+        return "not palindrome";
+      }
+    }
+  }
+  checkPalindrome("madam");
+</script>
